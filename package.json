@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npm run lint && webpack --config webpack.config.js -p",
     "dev": "npm run lint && webpack-dev-server --config webpack.dev.config.js --inline",
-    "lint": "./node_modules/.bin/eslint js"
+    "lint": "./node_modules/.bin/eslint js",
+	"postinstall": "npm install fabric --no-optional"
   },
   "author": "Simon Johansson @simonlovesyou",
   "license": "ISC",
