@@ -7,7 +7,9 @@
     "build": "npm run lint && webpack --config webpack.config.js -p",
     "dev": "npm run lint && webpack-dev-server --config webpack.dev.config.js --inline",
     "lint": "./node_modules/.bin/eslint js",
-	"postinstall": "npm install fabric --no-optional"
+    "postinstall": "npm install fabric --no-optional",
+    "explode": "node util/explode.js",
+    "clean:gifs": "rm -rf images/exploded-gifs"
   },
   "author": "Simon Johansson @simonlovesyou",
   "license": "ISC",
@@ -28,6 +30,9 @@
     "url-loader": "^0.5.7",
     "waypoints": "^4.0.0",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "bluebird": "^3.4.7",
+    "glob": "^7.1.1",
+    "mkdirp": "^0.5.1"
   }
 }
