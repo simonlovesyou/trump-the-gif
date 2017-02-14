@@ -9,7 +9,7 @@
     "lint": "./node_modules/.bin/eslint js",
     "postinstall": "npm install fabric --no-optional",
     "explode": "node util/explode.js",
-    "clean:gifs": "rm -rf images/exploded-gifs"
+    "clean:exploded": "rm -rf images/exploded-gifs"
   },
   "author": "Simon Johansson @simonlovesyou",
   "license": "ISC",
