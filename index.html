@@ -12,9 +12,40 @@
 </head>
 
 <body>
+<!--Canvas object-->
+  <canvas style="left: -300px; border: 2px solid;display:inline " id="cLeft"></canvas>
+  <canvas style="left: -300px; border: 2px solid;display:inline " id="cRight"></canvas>
+<canvas style="display:inline;border: 2px solid red" id="dest-c"></canvas>
+<div id="edit-canvas-tools" style="margin-top:10px;">
+        <button id="drawing-mode" class="btn btn-info">Enter manipulation mode</button>
+        <div  id="drawing-mode-options">
+          <label for="drawing-mode-selector">Mode:</label>
+          <select id="drawing-mode-selector">
+            <option>Pencil</option>
+            <option>Circle</option>
+            <option>Spray</option>
+            <option>Pattern</option>
 
-    <!--EXAMPLE PAGE ENDS-->
+            <option>hline</option>
+            <option>vline</option>
+            <option>square</option>
+            <option>diamond</option>
+            <option>texture</option>
+          </select><br>
+          <label for="drawing-line-width">Line width:</label>
+          <input type="range" value="30" min="0" max="150" id="drawing-line-width"><br>
+          <label for="drawing-color">Line color:</label>
+          <input type="color" value="#005E7A" id="drawing-color"><br>
+          <label for="drawing-shadow-width">Line shadow width:</label>
+          <input type="range" value="0" min="0" max="50" id="drawing-shadow-width"><br>
+          <label for="canvas-background-picker">background color:</label>
+          <input type="color" value="#f6f7e9" id="canvas-background-picker"><br>
+        </div>
+        <button id="done-btn" class="btn btn-info">Done</button>
+      </div>
+
     <script src="build/bundle.js"></script>
+
 </body>
 
 </html>

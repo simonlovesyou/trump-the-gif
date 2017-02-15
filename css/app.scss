@@ -1,1 +1,5 @@
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../css/palette.scss";
+body{
+  background-color: $color1;
+}
