@@ -13,10 +13,19 @@
 
 <body>
 <!--Canvas object-->
+<div id="mapping-container">
   <canvas style="left: -300px; border: 2px solid;display:inline " id="frame-c"></canvas>
-  <button id="next-frame-btn" class="btn btn-info">Next Frame</button>
-  <script src="build/frame-mapper.js"></script>
+  <button id="next-frame-btn"  class="btn btn-info">Next Frame</button>
+  <button id="reset-tools-btn"  class="btn btn-info">Reset Frame</button>
 
+</div>
+
+<div style="display:none" id="mapping-finished">
+  <h1>Mapping complete!</h1>
+  <img src="../images/thank-you.gif" alt="Thank you GIF" />
+</div>
+
+<script src="build/frame-mapper.js"></script>
 </body>
 
 </html>
