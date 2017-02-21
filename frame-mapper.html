@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Webpack Boilerplate</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="build/style.css" />
+</head>
+
+<body>
+<!--Canvas object-->
+<div id="mapping-container">
+  <canvas style="left: -300px; border: 2px solid;display:inline " id="frame-c"></canvas>
+  <button id="next-frame-btn"  class="btn btn-info">Next Frame</button>
+  <button id="reset-tools-btn"  class="btn btn-info">Reset Frame</button>
+
+</div>
+
+<div style="display:none" id="mapping-finished">
+  <h1>Mapping complete!</h1>
+  <img src="../images/thank-you.gif" alt="Thank you GIF" />
+</div>
+
+<script src="build/frame-mapper.js"></script>
+</body>
+
+</html>

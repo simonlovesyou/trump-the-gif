@@ -3,9 +3,10 @@ var path = require('path');
 var autoprefixer = require('autoprefixer');
 
 module.exports = {
-    entry: [
-        './js/app.js'
-    ],
+    entry: {
+        app:'./js/app.js',
+        'frame-mapper':'./js/frame-mapper.js'
+    },
     module: {
         loaders: [{
             test: /\.js$/,
